@@ -14,7 +14,7 @@ def assign_rooms(names)
   names.each_with_index do |name, idx|
   index = idx + 1
   room = index.to_s
-  rooms << "Hello #{name}! You'll be assigned to room #{room}!"
+  rooms << "Hello, #{name}! You'll be assigned to room #{room}!"
   end
   rooms
 end 
