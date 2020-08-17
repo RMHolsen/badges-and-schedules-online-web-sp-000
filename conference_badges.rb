@@ -21,9 +21,9 @@ end
   
 def printer(attendees)
   badges = []
-  printer.each {|name| badges << batch_badge_creator(name)}
+  attendees.each {|name| badges << batch_badge_creator(name)}
   rooms = []
-  printer.each {|name| rooms << assign_rooms(name)}
+  attendees.each {|name| rooms << assign_rooms(name)}
   puts badges
   puts rooms
 end 
